@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color:rgba(0,0,0,0.8);
+    height: 800px;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+header{
+    width:100vw;
+    height:20%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    
+}
+header h4{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.round{
+    border-radius: 50%;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+}
+#musicicon{
+    width:15%;
+    height:100%;
+    background-image: url(MusicPlayer-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#favourite{
+    font-size: 1.5rem;
+    color: ivory;
+    text-decoration: none;
+    padding: 10px 20px ;
+}
+
+
+/* Search Bar Design   */
+
+
+#Search-bar{
+    right: 12%;
+    top: 5%;
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+    height: 5vh;
+    padding: 5px;
+    background-color: darkblue;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    
+
+}
+
+#input{
+    width: 80%;
+    height:inherit;
+    line-height: 10px;
+    padding: 0px 5px;
+    border: none;
+}
+input{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+
+    border-style: none;
+    background-color: inherit;
+    font-size: 1rem;
+    font-family: sans-serif;
+
+
+}
+
+#search-icon{
+    width: 10%;
+    height: 100%;
+    background-image: url(asset_0000000000000013_1549319004_search-icon.png);
+    background-repeat: no-repeat;
+    background-size:contain; 
+    
+}
+
+#voice-search{
+    width: 10%;
+    height: 100%;
+    background-image: url(https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=voice-search);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* User Account Picture Portion  */ 
+
+#Account{
+    left: 95%;
+    width: max-content;
+    top: 5%;
+    border: 1px solid transparent;
+    margin-right: 5px;
+}
+
+
+#Account img{
+    width: 60px;
+    height: 60px;
+}
+
+    
+/* Main Area */
+
+
+main{
+    margin-top:10px;
+    width: 70%;
+    height: 80%;
+    display: inline-block;
+}
+
+#latest-release{
+    width: 90%;
+    height:40%;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+
+
+}
+
+#latest-tracks{
+    width: 100%;
+    height:45%;
+    display: flex;
+
+}
+
+#latest-release h1{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.tiles{
+    width: 50%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+
+}
+#song{
+    width: 50%;
+    height: 100%;
+}
+
+.tiles #song img{
+    width:100%;
+    height: 100%;
+}
+
+#song-name{
+    width:30%;
+    height: 100%;
+    background-color:  rgba(0,0,0,0.5);
+
+}
+#song-name p{
+    text-align: center;
+    padding-top: 50px;
+    font-size: .8rem;
+
+    width: max-content;
+
+}
+
+.symbol{
+    width: 10%;
+    height: 20%;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 50px;
+    
+}
+
+.symbol img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.symbol img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+}
+#latest-tracks1{
+    width: 100%;
+    height: 40%;
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+}
+
+
+/* Carousel part */
+.carasoul1{
+    width:90%;
+    height:40%;
+    margin-left: 10px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), transparent);
+    padding: 5px 10px 5px 0px;
+    display: flex;
+    
+    
+}
+.carasoul1 #left,#right{
+ position: absolute;
+  top: 95%; 
+ 
+  width: 40px;
+  height: 40px; 
+  margin-top: -20px;     
+  border-radius: 50px;   
+  line-height: 40px;
+  text-align: center; 
+  cursor: pointer;
+  background-color: #fff; 
+  color: black;               
+  transition: all 0.6s;
+  font-size: 20px; 
+  font-weight: bold;
+}
+.carasoul1 #right{
+right: 480px;
+}
+.carasoul1 #left{
+left: 20px;
+
+}
+.carasoul1 #left:hover, 
+.carasoul1 #right:hover 
+{
+opacity: 1; 
+background-color: #fff;  
+}
+    
+.carasoul1 #left::before{
+    content: '<';
+
+}
+.carasoul1 #right::before{
+    content: '>';
+
+}
+
+.carasoul1 .item{
+    width: 30%;
+    height: 100%;
+    margin:10px 0px 0px 50px;
+
+}
+.carasoul1 img{
+    width: 200px;
+    height: 90%;
+
+
+}
+
+.round,.carasoul1 img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/* PlayList Portion  */
+
+
+aside{
+    width: 21%;
+    height:auto;
+    display: inline-block; 
+    vertical-align: top;
+}
+.accordion{
+    width:90%;
+    margin:20px 20px 40px 60px;
+    background:lightgrey;
+}
+.accordion-tab .accordion-toggle{
+    display: none;
+}
+.accordion-tab > label{
+    color: #fff;
+    background:linear-gradient(45deg,black,transparent);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    position: relative;
+
+    display: block;
+    padding: 12px 20px 12px 40px;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+}
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: 1s ease-in-out ;
+    overflow: hidden;
+
+}
+.accordion-tab > .accordion-content h4{
+    padding: 15px 20px;
+    line-height: 10px;
+}
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height:100vh;
+    /*padding: 20px;*/
+}
+
+/* Artist Portion   */
+
+
+#artist{
+    width: 65%;
+    height: 30%;
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),transparent);
+    margin-left: 10px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#artist div{
+    width: 24%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#artist-1{
+    background-image: url(uditnarayan.jpg);
+}
+
+#artist-2{
+    background-image: url(sonunigam.jpg);
+}
+
+#artist-3{
+    background-image: url(arijitsingh.jpg);
+}
+
+#artist-4{
+    background-image: url(nehakakkar.jpeg);
+}
+
+
+
+
+
